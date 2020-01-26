@@ -1,0 +1,27 @@
+.element1 {
+  display:block;
+  flex:1 1 80%;
+  text-align:left;
+  padding:5px 30px;
+  position:relative;
+}
+.element2 {
+  display:block;
+  flex:1 1 20%;
+  padding:5px 10px;text-align:right;
+}
+.checked .element1::before{
+  content:'';position:absolute;
+  padding:8px 4px;top:5px;left:10px;
+  border:2px solid #fff;
+  display:inline-block;
+  border-width:0 2px 2px 0;
+  transform:rotate(45deg);
+  
+}
+.checked {
+  background-color:#c7c5c5;
+}
+.checked .element1{
+  text-decoration:line-through;
+}
